@@ -24,8 +24,6 @@ button {
 
 .accordion-card {
   overflow: hidden;
-  display: flex;
-  flex-direction: column;
   height: 100%;
 }
 
@@ -40,5 +38,5 @@ button {
 }
 
 .accordion-active {
-  height: 300px !important;
+  height: 100px !important;
 }

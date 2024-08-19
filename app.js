@@ -17,6 +17,9 @@ faqs.forEach((value) => {
 for (let index = 0; index < accordionButton.length; index++) {
   const button = accordionButton[index];
 
-  button.onclick = () => button.classList.toggle("accordion-active");
-  console.log(button);
+  const accordionAnswer = button.nextElementSibling;
+
+  button.onclick = () => accordionAnswer.classList.toggle("accordion-active");
+
+  console.log(accordionAnswer);
 }
