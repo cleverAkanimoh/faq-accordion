@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+button {
+  cursor: pointer;
+}
+
+#accordion-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.accordion-card {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.accordion-button {
+  background-color: transparent;
+  border: 0;
+}
+
+.accordion-answer {
+  height: 0;
+  transition: height 0.5s ease;
+}
+
+.accordion-active {
+  height: 300px !important;
+}
